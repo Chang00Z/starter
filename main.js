@@ -1,3 +1,8 @@
 import "./style.css";
 
-console.log("hello world");
+function add(a, b) {
+  const result = a + b;
+  return result;
+}
+
+console.log("hello world", add(1, 2));
