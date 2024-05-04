@@ -1,3 +1,7 @@
 import "./style.css";
 
-console.log("hello world");
+const img = document.querySelector("#image");
+
+img.onclick = function () {
+  window.alert("Don't Worry, Be Capy!");
+};
