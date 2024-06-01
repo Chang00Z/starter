@@ -1,25 +1,27 @@
 # Starter
 
-Template for practicing basic HTML, CSS, and Javascript syntax.
-
 ## 如何開始？
 
-```shell
-# 下載程式碼
-git clone https://github.com/Chang00Z/starter.git
+### 在 VSCode 開啟此專案
 
-# 移動至程式所在 folder
-cd starter
+開啟 VSCode → 檔案 → 開啟檔案夾 → 選擇範本的資料夾
+_首次開啟，會跳出安裝插件提示_
 
-# 安裝相關套件
-npm install
+### 運行本機開發環境
 
-# 在本機上運行
-npm run dev
-```
+開啟 VSCode → Terminal → New Terminal → 輸入 `npm run dev`
 
-運行成功後，會看 terminal 中看到以下訊息，於瀏覽器開啟該連結，即可看到練習畫面
+### 開啟網頁
+
+上一步驟的指令運行成功後，會在 terminal 中看到以下訊息，於瀏覽器開啟該連結，即可看到畫面
 
 ```
 ➜  Local:   http://localhost:5173/
 ```
+
+## 如何進行開發
+
+1. HTML: 修改 `index.html` 檔案
+2. CSS: 修改 `style.css` 檔案
+3. JavaScript: 修改 `main.js` 檔案
+4. 圖片加到 `public` 檔案夾中，即可在專案中使用 (例. `<img src="/capybara.webp"></img>`)
