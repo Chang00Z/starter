@@ -1,7 +1,11 @@
 import "./style.css";
 
-const img = document.querySelector("#image");
-
-img.onclick = function () {
-  window.alert("Don't Worry, Be Capy!");
-};
+document.querySelector(".addButton").addEventListener("click", () => {
+  const inputElement = document.querySelector(".input");
+  if (inputElement.value) {
+    const newItem = document.createElement("div");
+    newItem.innerText = inputElement.value;
+    const container = document.querySelector(".container");
+    container.appendChild(newItem);
+  }
+});
