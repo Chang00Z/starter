@@ -9,3 +9,9 @@ document.querySelector(".addButton").addEventListener("click", () => {
     container.appendChild(newItem);
   }
 });
+
+document.querySelector(".container").addEventListener("click", (event) => {
+  if (!event.target.classList.contains("container")) {
+    event.target.classList.toggle("delete");
+  }
+});
