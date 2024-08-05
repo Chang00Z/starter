@@ -33,3 +33,22 @@ document.querySelector(".sortButton").addEventListener("click", () => {
   container.innerHTML = "";
   itemsArray.forEach((item) => container.appendChild(item));
 });
+
+document.querySelector(".filter").addEventListener("input", (event) => {
+  const keyword = event.target.value;
+  const container = document.querySelector(".container");
+  const itemsArray = Array.from(container.querySelectorAll("div"));
+  if (keyword) {
+    itemsArray.forEach((item) => {
+      if (item.innerText.includes(keyword)) {
+        item.classList.remove("hide");
+      } else {
+        item.classList.add("hide");
+      }
+    });
+  } else {
+    itemsArray.forEach((item) => {
+      item.classList.remove("hide");
+    });
+  }
+});
